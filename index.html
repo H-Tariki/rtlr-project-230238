@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./dist/output.css">
-</head>
-<body>
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./src/output.css">
+        <link rel="stylesheet" href="./dist/output.css">
         <link rel="stylesheet" href="./animate/animate.css">
     </head>
     <body>
@@ -23,7 +14,7 @@
              max-[768px]:w-[2000px] max-[600px]:h-full absolute max-w-none z-[-10]">
 
              <div id="menu-container" class="container flex justify-between w-full h-[10%] items-center px-[100px] max-[428px]:flex-row-reverse max-[428px]:justify-center max-[1400px]:mt-5">
-                <div id="lef" class="border border-yellow-400 h-[30%] p-5 max-[1400px]:p-3 flex justify-center items-center max-[1020px]:hidden"><a href="#" class="text-white font-bold">مشاوره رایگان</a></div>
+                <div id="left" class="border border-yellow-400 h-[30%] p-5 max-[1400px]:p-3 flex justify-center items-center max-[1020px]:hidden animate__animated"><a href="#" class="text-white font-bold">مشاوره رایگان</a></div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 min-[1020px]:hidden text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>              
@@ -101,11 +92,12 @@
                 </div>
             </div>
         </div>
+
+        <script src="./WOW-master/dist/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="./js/script.js"></script>
     </body>
     </html>
-    <script src="./WOW-master/dist/wow.js"></script>
-              <script>
-              new WOW().init();
-    </script>
-</body>
 </html>
