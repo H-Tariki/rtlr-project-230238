@@ -692,6 +692,10 @@ video {
   max-width: none;
 }
 
+.animate-none {
+  animation: none;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

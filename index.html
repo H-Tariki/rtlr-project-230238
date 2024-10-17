@@ -14,6 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./src/output.css">
+        <link rel="stylesheet" href="./animate/animate.css">
     </head>
     <body>
         <div id="header" style="background-color: rgba(45, 43, 44, 0.7)" class="relative flex flex-col
@@ -43,9 +44,9 @@
             </div>
 
             <div id="list-container" class="w-full flex flex-col items-center gap-8 my-44 max-[410px]:mt-24">
-                <h1 class="text-white font-bold text-4xl max-[600px]:text-3xl max-[450px]:text-2xl max-[350px]:text-xl max-[290px]:text-lg max-[258px]:text-sm">خدمات نوین حسابداری با نوین داده</h1>
-                <h3 class="text-white text-3xl max-[600px]:text-2xl max-[450px]:text-xl max-[350px]:text-lg max-[290px]:text-sm max-[258px]:text-xs">با تیمی مجرب و کار آزموده</h3>
-                <div id="services" class="w-full flex container justify-center mt-28 gap-10 flex-wrap"> 
+                <h1 class="text-white font-bold text-4xl max-[600px]:text-3xl max-[450px]:text-2xl max-[350px]:text-xl max-[290px]:text-lg max-[258px]:text-sm animate__animated animate__fadeInDown">خدمات نوین حسابداری با نوین داده</h1>
+                <h3 class="text-white text-3xl max-[600px]:text-2xl max-[450px]:text-xl max-[350px]:text-lg max-[290px]:text-sm max-[258px]:text-xs animate__animated animate__fadeInDown">با تیمی مجرب و کار آزموده</h3>
+                <div id="services" class="w-full flex container justify-center mt-28 gap-10 flex-wrap animate__animated animate__flipInX"> 
                     <div class="min-w-[200px] h-[150px] border border-gray-400 flex flex-col gap-4 justify-center items-center hover:border-yellow-400 transition-colors duration-500">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 text-yellow-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
@@ -79,10 +80,10 @@
                 </div>
             </div>
         </div>
-        <div id="about-container" class="flex justify-center w-full h-[500px] max-[900px]:h-[1000px] my-10">
+        <div id="about-container" class="flex justify-center w-full h-[500px] max-[900px]:h-[1000px] my-10 wow animate__animated animate__backInUp">
             <div id="about-me" class="flex container w-full h-full gap-3 max-[900px]:flex-col">
-                <div style="background-image: url(./images/about.jpg);" class="w-[50%] max-[900px]:w-full h-full max-[900px]:h-[50%] rounded-lg bg-cover"></div>
-                <div class="w-[50%] max-[900px]:w-full h-full max-[900px]:h-[50%] p-2 overflow-y-scroll" dir="rtl">
+                <div style="background-image: url(./images/about.jpg);" class="w-[50%] max-[900px]:w-full h-full max-[900px]:h-[50%] rounded-lg bg-cover animate__animated animate__backInRight animate__slow"></div>
+                <div class="w-[50%] max-[900px]:w-full h-full max-[900px]:h-[50%] p-2 overflow-y-scroll animate__animated animate__flipInX animate__slow" dir="rtl">
                     <h1 style="font-weight: bolder;" class="w-full text-2xl">موسسه حسابداری و خدمات مالی نوین داده ارائه دهنده</h1>
                     <h1 style="font-weight: bolder;" class="w-full text-2xl">کلیه خدمات مالی، حسابداری، حسابرسی</h1>
                     <h1 class="mt-5">موسسه خدمات مالی نوین داده با بیش از 10 سال سابقه فعالیت در تمام امور مالیاتی و حسابداری، ارائه دهنده بهترین خدمات می باشد و تمام خدمات موبوط به مالیات را طرحی و تنظیم می کنند.</h1>
@@ -102,5 +103,9 @@
         </div>
     </body>
     </html>
+    <script src="./WOW-master/dist/wow.js"></script>
+              <script>
+              new WOW().init();
+    </script>
 </body>
 </html>
