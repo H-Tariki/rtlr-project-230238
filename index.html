@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="./dist/output.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="./animate/animate.css">
+        <link rel="stylesheet" href="./dist/output.css">
+        
     </head>
     <body>
         <div id="header" style="background-color: rgba(45, 43, 44, 0.7)" class="relative flex flex-col
@@ -93,6 +95,26 @@
             </div>
         </div>
 
+        <div id="slider" class="w-full h-[200px] my-10">
+            <!-- Slider main container -->
+            <div class="swiper w-full h-full container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide w-full h-full flex items-center justify-center"> <img src="./images/rtlr-slider.png" alt="slider" class="w-[50%]"> </div>
+                <div class="swiper-slide w-full h-full flex items-center justify-center"> <img src="./images/filimo-slider.png" alt="slider" class="w-[50%]"> </div>
+                <div class="swiper-slide w-full h-full flex items-center justify-center"> <img src="./images/zoomit-slider.png" alt="slider" class="w-[50%]"> </div>
+                <div class="swiper-slide w-full h-full flex items-center justify-center"> <img src="./images/rtlr-slider.png" alt="slider" class="w-[50%]"> </div>
+                <div class="swiper-slide w-full h-full flex items-center justify-center"> <img src="./images/filimo-slider.png" alt="slider" class="w-[50%]"> </div>
+                <div class="swiper-slide w-full h-full flex items-center justify-center"> <img src="./images/zoomit-slider.png" alt="slider" class="w-[50%]"> </div>             
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./WOW-master/dist/wow.js"></script>
         <script>
             new WOW().init();
