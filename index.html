@@ -16,11 +16,11 @@
              max-[768px]:w-[2000px] max-[600px]:h-full absolute max-w-none z-[-10]">
 
              <div id="menu-container" class="container flex justify-between w-full h-[10%] items-center px-[100px] max-[428px]:flex-row-reverse max-[428px]:justify-center max-[1400px]:mt-5">
-                <div id="left" class="border border-yellow-400 h-[30%] p-5 max-[1400px]:p-3 flex justify-center items-center max-[1020px]:hidden animate__animated"><a href="#" class="text-white font-bold">مشاوره رایگان</a></div>
+                <div id="left" class="border border-yellow-400 h-[30%] p-5 max-[1400px]:p-3 flex justify-center items-center max-[1020px]:hidden animate__animated animate__backInLeft"><a href="#" class="text-white font-bold">مشاوره رایگان</a></div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 min-[1020px]:hidden text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>              
-                <div id="mid" class="flex">
+                <div id="mid" class="flex animate__animated animate__backInUp">
                     <ul class="flex gap-6 max-[1280px]:hidden">
                         <li class="text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300 p-3 font-bold">تماس با ما</li>
                         <li class="text-white cursor-pointer hover:text-yellow-500 transition-colors duration-300 p-3 font-bold">تیم</li>
@@ -30,7 +30,7 @@
                         <li class="cursor-pointer text-yellow-500 transition-colors duration-300 p-3 font-bold">خانه</li>
                     </ul>
                 </div>
-                <div id="right" class="flex flex-row-reverse max-[500px]:flex-col max-[500px]:items-center">
+                <div id="right" class="flex flex-row-reverse max-[500px]:flex-col max-[500px]:items-center animate__animated animate__backInRight">
                     <h1 class="font-bold text-xl text-white ml-2 cursor-pointer">نوین داده</h1>
                     <p class="text-yellow-300 cursor-pointer max-[400px]:px-10">حسابرسی، حسابداری و مالی</p>
                 </div>
@@ -95,7 +95,7 @@
             </div>
         </div>
 
-        <div id="slider" class="w-full h-[200px] my-10">
+        <div id="slider" class="w-full h-[200px] my-10 animate__animated animate__fadeIn animate__slower animate__zoomInDown wow" data-wow-duration="2s">
             <!-- Slider main container -->
             <div class="swiper w-full h-full container">
                 <!-- Additional required wrapper -->
