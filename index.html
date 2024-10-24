@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="./animate/animate.css">
         <link rel="stylesheet" href="./dist/output.css">
-        
+        <link rel="stylesheet" href="./base.css">
+         <script src="./js/script.js" defer></script>
     </head>
-    <body>
+    <body class="overflow-x-hidden-hidden">
         <div id="header" style="background-color: rgba(45, 43, 44, 0.7)" class="relative flex flex-col
          items-center overflow-hidden w-full h-auto min-[1400px]:h-[1000px]">
             <img src="./images/top-img.jpg" alt="" class="w-[2500px] h-auto min-[1400px]:w-[2000px] max-[1400px]:w-[1500px]
@@ -169,12 +170,33 @@
                 <h1 class="text-white text-lg max-[400px]:text-sm max-[230px]:text-xs border-2 border-white shadow-2xl bg-gray-800 px-5 self-center py-2 rounded-lg hover:bg-yellow-400 hover:font-bold transition-all duration-500 cursor-pointer hover:translate-y-[-10px]">مشاوره رایگان</h1>
             </div>
         </div>
+
+        <div class="flex justify-end mr-20 items-center">
+            <div class="w-[100px] border-b-2 mr-4 pb-4 border-yellow-300"></div>
+            <h1 class="text-gray-400">نمونه کار ها</h1>
+        </div>
+        <div id="portfolio" class="w-full flex justify-center my-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 container">
+                <div id="portfolio-1" class="portfolio-item h-[350px] mb-8 rounded-lg transition-all relative wow animate__animated animate__backInDown animate__faster">
+                    <div id="darken1" style="background-color: rgba(63, 61, 62, 0.7);" class="w-full h-full absolute top-0 left-0 darkness"></div>
+                    <img id="portfolio-1-img" src="./images/portfolio-1.jpg" alt="" class="transition-all duration-500 w-full h-full">
+                </div>
+                <div id="portfolio-2" class="portfolio-item h-[350px] mb-8 rounded-lg transition-all relative wow animate__animated animate__backInDown animate__fast">
+                    <div id="darken2" style="background-color: rgba(63, 61, 62, 0.7);" class="w-full h-full absolute top-0 left-0 darkness"></div>
+                    <img id="portfolio-2-img" src="./images/portfolio-2.jpg" alt="" class="transition-all duration-500 w-full h-full">
+                </div>
+                <div id="portfolio-3" class="portfolio-item h-[350px] mb-8 rounded-lg transition-all relative wow animate__animated animate__backInDown">
+                    <div id="darken3" style="background-color: rgba(63, 61, 62, 0.7);" class="w-full h-full absolute top-0 left-0 darkness"></div>
+                    <img id="portfolio-3-img" src="./images/portfolio-3.jpg" alt="" class="transition-all duration-500 w-full h-full">
+                </div>
+            </div>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./WOW-master/dist/wow.js"></script>
         <script>
             new WOW().init();
         </script>
-        <script src="./js/script.js"></script>
     </body>
     </html>
 </html>
